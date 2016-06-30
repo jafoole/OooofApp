@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:baselineAligned="false"
+tools:context=".MainActivity"
+android:background="#1abc9c">
+
+
+    <TextView
+        android:id="@+id/textOoofff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ooofff!!"
+        android:padding="10dp"
+        android:textSize="80sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+
+    <!--<com.oooffapp.ProportionalImageView-->
+        <!--android:id="@+id/imgPreview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:rotation="90"-->
+        <!--android:src="@drawable/Screenshot_stickeryou"-->
+        <!--/>-->
+
+    <!-- To display picture taken -->
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="90"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- To preview video recorded -->
+    <VideoView
+        android:id="@+id/videoPreview"
+        android:layout_width="485dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnCapturePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera_white_24dp"
+        android:layout_gravity="bottom|left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sendFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send_white_24dp"
+        android:layout_gravity="bottom|left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
+
+
